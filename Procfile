@@ -1,0 +1,1 @@
+web: gunicorn dash_weather_app:server
