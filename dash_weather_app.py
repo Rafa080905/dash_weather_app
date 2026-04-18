@@ -2,11 +2,12 @@ import dash
 from dash import dcc, html, Input, Output
 import requests
 import plotly.graph_objects as go
+import os
+
+API_KEY = os.getenv("API_KEY")
 
 app = dash.Dash(__name__)
 server = app.server
-
-API_KEY = "03de29244d3e7fe97a1fd7c57646a0a9"
 
 # =======================
 # 🔹 DATA KOTA AUTOCOMPLETE
